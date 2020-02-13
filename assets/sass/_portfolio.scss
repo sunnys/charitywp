@@ -1,0 +1,272 @@
+.portfolio-image {
+	position: relative;
+	overflow: hidden;
+	img {
+		@include transition(all 1s);
+	}
+	&:hover {
+		img {
+			@include scale(1.1);
+		}
+		.portfolio-hover {
+			&:before {
+				@include opacity(0.4);
+				background-color: #000;
+			}
+			.thumb-bg {
+				.mask-content {
+					.portfolio_zoom {
+						top: calc(50% - 15px);
+						top: -webkit-calc(50% - 15px);
+						top: -moz-calc(50% - 15px);
+						@include translate(0, -50%);
+						.btn_zoom {
+							@include opacity(1);
+						}
+					}
+					.portfolio_title {
+						top: calc(50% + 15px);
+						top: -webkit-calc(50% + 15px);
+						top: -moz-calc(50% + 15px);
+						@include translate(0, -50%);
+						h3 {
+							a {
+								@include opacity(1);
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+	.portfolio-hover {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 100%;
+		margin: auto;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			left: 0;
+			height: 100%;
+			@include opacity(0);
+			@include transition(all 0.3s);
+			background-color: transparent;
+		}
+		.thumb-bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			.mask-content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.portfolio_zoom {
+					position: absolute;
+					width: 100%;
+					top: 0;
+					@include transition(all 0.3s);
+					.btn_zoom {
+						color: #fff;
+						background-color: transparent;
+						width: auto;
+						line-height: 1.6em;
+						@include rounded(0);
+						margin: 0;
+						height: auto;
+						font-size: 18px;
+						@include opacity(0);
+					}
+				}
+				.portfolio_title {
+					position: absolute;
+					top: 100%;
+					width: 100%;
+					@include transition(all 0.3s);
+					h3 {
+						font-size: 18px;
+						margin: 0;
+						a {
+							display: block;
+							color: #fff;
+							@include opacity(0);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.portfolio-tabs-wrapper {
+	text-align: center;
+	.portfolio-tabs {
+		display: inline-block;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #eee;
+		padding: 0 10px;
+		button {
+			border: none;
+			border-bottom: 2px solid transparent;
+			background-color: transparent;
+			text-transform: uppercase;
+			margin: 0 8px -2px 8px;
+			padding: 5px 8px;
+			font-weight: bold;
+			font-size: 13px;
+			&:focus, &:active {
+				outline: none;
+			}
+		}
+	}
+}
+
+.content_portfolio {
+	width: 1170px;
+}
+
+.portfolio_column {
+	width: 100%;
+	overflow: hidden;
+}
+
+.bd-content-portfolio {
+	.tags {
+		ul {
+			display: inline-block;
+			list-style: none;
+			li {
+				display: inline-block;
+				&:after {
+					content: ',';
+				}
+				&:last-child {
+					&:after {
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}
+
+.entry-content-portfolio {
+	.entry-content-left {
+		iframe {
+			margin-top: 27px;
+			width: 100%;
+		}
+	}
+
+	.single-img {
+		margin-top: 27px;
+	}
+
+	.portfolio_carousel {
+		&:hover {
+			.owl-controls {
+				.owl-next, .owl-prev {
+					opacity: 1;
+				}
+			}
+		}
+		.owl-controls {
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			@include translate(0, -50%);
+			.owl-next, .owl-prev {
+				width: 40px;
+				text-align: center;
+				height: 40px;
+				color: #fff;
+				opacity: 0;
+				@include transition(all 0.3s);
+			}
+			.owl-next {
+				position: absolute;
+				right: 15px;
+			}
+			.owl-prev {
+				left: 15px;
+				position: absolute;
+			}
+
+			i {
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+.portfolio-content {
+	&.single-content {
+		.bd-content-portfolio {
+			margin-top: 20px;
+		}
+	}
+}
+
+.one-col.item_portfolio.item_large {
+	width: 100%;
+}
+
+.one-col.item_portfolio {
+	width: 100%;
+}
+
+.two-col.item_portfolio.item_large {
+	width: 100%;
+}
+
+.two-col.item_portfolio {
+	width: 50%;
+}
+
+.three-col.item_portfolio.item_large {
+	width: 66.66%;
+}
+
+.three-col.item_portfolio {
+	width: 33.33%;
+}
+
+.four-col.item_portfolio.item_large {
+	width: 50%;
+}
+
+.four-col.item_portfolio {
+	width: 25%;
+}
+
+.five-col.item_portfolio.item_large {
+	width: 40%;
+}
+
+.five-col.item_portfolio {
+	width: 20%;
+}
+
+.item_portfolio {
+	float: left;
+}
+
+.related-portfolio {
+	margin-top: 60px;
+	ul {
+		li {
+			list-style: none;
+		}
+	}
+	.p_line {
+		display: none;
+	}
+	.widget-title {
+		margin-bottom: 20px;
+	}
+}

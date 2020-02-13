@@ -1,0 +1,38 @@
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+	margin: 0;
+	padding: 0;
+	.slides {
+		> li {
+			display: none;
+			-webkit-backface-visibility: hidden;
+		}
+		img {
+			width: 100%;
+			display: block;
+		}
+		&:after {
+			content: "\0020";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		html[xmlns] & {
+			display: block;
+		}
+		* html & {
+			height: 1%;
+		}
+		.no-js & {
+			> li {
+				&:first-child {
+					display: block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.tp_event_counter {
+	background-color: #ffb606;
+	height: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.countdown-section {
+	background: rgba(255, 255, 255, .2);
+	border: 1px solid rgba(255, 255, 255, .1);
+	padding: 10px;
+}
+
+.countdown-amount {
+	position: relative;
+	width: 50px;
+	height: 40px;
+	overflow: hidden;
+}
+
+.countdown-period {
+
+}
+
+.countdown-descr {
+	font-size: 13px !important;
+}
+
+.entry-countdown {
+	.tp-event-notice.error {
+		background: #fff;
+		padding: 10px 15px;
+		position: relative;
+		color: #000;
+		&:before {
+			content: "";
+			background: #f00;
+			height: 44px;
+			position: absolute;
+			width: 5px;
+			left: 0;
+			top: 0;
+		}
+	}
+}

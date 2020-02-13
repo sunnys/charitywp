@@ -1,0 +1,67 @@
+#pixelgrade_shortcodes_modal.reveal-modal {
+	z-index: 99999 !important;
+}
+
+.thim-video-advanced-upload-k {
+	display: none !important;
+}
+
+.reveal-modal-bg {
+	z-index: 9999 !important;;
+}
+
+.fix-cols select {
+	width: 70px !important;
+}
+
+.text-right {
+	text-align: right;
+}
+
+#wpgrade_shortcodes_form_modified .media_image_holder {
+	cursor:         pointer;
+	vertical-align: middle;
+	width:          200px;
+	text-align:     center;
+	height:         140px;
+	background:     #ddd;
+	border-radius:  10px;
+	padding-top:    20px
+}
+
+#wpgrade_shortcodes_form_modified .media_image_holder i {
+	color:      #eee;
+	border-top: 16px;
+	font-size:  100px;
+	cursor:     pointer
+}
+
+#wpgrade_shortcodes_form_modified .media_image_holder i.icon-edit {
+	display:  none;
+	position: absolute;
+	top:      35px;
+	left:     70px;
+	z-index:  10
+}
+
+#wpgrade_shortcodes_form_modified .media_image_holder .upload_preview {
+	display:       none;
+	position:      absolute;
+	top:           0;
+	left:          0;
+	z-index:       9;
+	border-radius: 10px;
+	height:        100%;
+	width:         100%
+}
+
+#wpgrade_shortcodes_form_modified .media_image_holder:hover i.active {
+	display: block
+}
+.type-erm_menu .column-shortcode,.post-type-erm_menu .manage-column.column-shortcode{
+	display: none;
+}
+
+#display-setting tr.even.first.tf-heading {
+	display: none;
+}

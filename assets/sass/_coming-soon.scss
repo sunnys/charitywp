@@ -1,0 +1,94 @@
+.admin-bar{
+    .coming-soon-wrapper {
+        height: calc(100vh - 32px)!important;
+        height: -webkit-calc(100vh - 32px)!important;
+        height: -moz-calc(100vh - 32px)!important;
+    }
+}
+.coming-soon-wrapper {
+    height: 100vh!important;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    .title {
+        line-height: 72px;
+        color: #FFF;
+    }
+    .content-text {
+        line-height: 26px;
+        color: #FFF;
+        font-weight: 400;
+        max-width: 560px;
+        margin: 0 auto;
+        margin-bottom: 37px;
+        font-size: 18px;
+    }
+
+    .coom-inner {
+        display: inline-block;
+        top: 50%;
+        position: relative;
+       @include translate(0, -50%);
+    }
+
+    .thim-countdown{
+        margin-top: 70px;
+        .count-down{
+            margin-bottom: 72px;
+            .counter-group {
+                .counter-block{
+                    width: 193px;
+                    height: 120px;
+                    color: #FFF;
+                    margin: 0px;
+                    border-right: 1px solid;
+                    border-color: rgba(255, 255, 255, 0.3);
+                    border-radius: 0;
+                    background: transparent;
+                    float: left;
+                    padding: 12px 0px;
+                    .counter{
+                        font-size: 60px;
+                        font-weight: bold;
+                        line-height: 60px;
+                        height: 60px;
+                        margin: 0;
+                    }
+                    &:last-child{
+                        border-right: 0;
+                    }
+                }
+                .counter-caption{
+                    font-size: 24px;
+                    line-height: 42px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .mc4wp-form {
+        max-width: 353px;
+        margin: auto;
+        input[type=email]{
+            background: transparent;
+            @include placeholder(#ccc);
+        }
+        button[type=submit]{
+            color: #FFF;
+        }
+    }
+
+}

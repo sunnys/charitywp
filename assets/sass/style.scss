@@ -1,0 +1,71 @@
+/*!
+Theme Name: CharityWP
+Theme URI: http://charitywp.thimpress.com/
+Author: ThimPress
+Author URI: http://thimpress.com
+Description: CharityWP
+Version: 2.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: charity, donate , two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: charitywp
+Domain Path: /languages/
+*/
+
+@import "variables";
+
+@import "mixins/mixins";
+
+@import "header/header";
+
+@import "header/main-menu";
+
+@import "animate";
+
+@import "archive";
+
+@import "bootstrap";
+
+@import "font-awesome/font-awesome";
+
+@import "ionicons/ionicons";
+
+@import "coming-soon";
+
+@import "footer";
+
+@import "mini-cart";
+
+@import "quickview";
+
+@import "reset-style";
+
+@import "sidebar";
+
+@import "template";
+
+@import "tp-donate";
+
+@import "widgets";
+
+@import "dropkick";
+
+@import "woocommerce";
+
+@import "magnific-popup";
+
+@import "jquery.countdown";
+
+@import "owl.carousel";
+
+@import "events";
+
+@import "site";
+
+@import "portfolio";
+
+@import "css/flexslider";
+
+@import "new-demo";
+
+@import "responsive";

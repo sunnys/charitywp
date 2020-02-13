@@ -1,0 +1,231 @@
+.widget-area {
+  ul {
+    margin-left: 0;
+  }
+  aside {
+    &.widget_events {
+      margin-bottom: 29px;
+    }
+    margin-bottom: 40px;
+    .widget-title {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 40px;
+      position: relative;
+      margin-top: 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:after {
+        content: '';
+        width: 100%;
+        display: block;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid #f5f5f5;
+        clear: both;
+        position: absolute;
+        float: left;
+        height: 2px;
+      }
+      &:before {
+        content: '';
+        width: 40px;
+        display: block;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        height: 2px;
+        top: auto;
+        z-index: 2;
+      }
+    }
+    ul li {
+      font-size: 13px;
+      font-weight: bold;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      list-style: none;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    select {
+      max-width: 100%;
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 6px 10px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0;
+      }
+    }
+
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+  .screen-reader-text {
+    display: none;
+  }
+}
+
+/* search */
+.search-form {
+  position: relative;
+  .search-field {
+    margin-bottom: 0;
+  }
+  .search-submit {
+    display: none;
+    margin: 0;
+    padding: 0 16px;
+  }
+  .toggle-search {
+    color: #999;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    line-height: 30px;
+    top: 50%;
+    @include transform(translateY(-50%));
+    font-size: 13px;
+    background: #FFF;
+    cursor: pointer;
+  }
+}
+
+/* Blog Search */
+.widget.thim_search_widget {
+  a.widget-search-form {
+    cursor: pointer;
+  }
+}
+
+.widget_rss {
+  .rsswidget {
+    font-weight: bold;
+  }
+  .rss-date {
+    display: block;
+    font-style: italic;
+    font-size: 90%;
+  }
+  cite {
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.widget_categories, .widget_pages {
+  ul li {
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.widget_nav_menu {
+  ul ul {
+    margin: 0px 0px 0px 15px;
+    li {
+      margin: 0;
+    }
+  }
+  li.menu-item-has-children {
+    padding-bottom: 0;
+    list-style: none;
+  }
+}
+
+.widget_recent_entries {
+  ul li {
+    .post-date {
+      font-size: $font-size-small;
+      font-style: italic;
+      display: block;
+    }
+  }
+}
+
+#sidebar {
+  #sb_instagram {
+    width: auto !important;
+    padding-bottom: 0 !important;
+    margin-left: -10px;
+    margin-right: -10px;
+    #sbi_images {
+      padding: 0 !important;
+      .sbi_item {
+        padding: 7px !important;
+      }
+    }
+  }
+  .rssSummary {
+    text-transform: none;
+  }
+  .thim-widget-events {
+    .archive-content {
+      margin-left: 0;
+    }
+  }
+}
+
+div.text-center > span[class^=PIN_] {
+  left: 0;
+  right: 0;
+  margin: 0 auto !important
+}
+
+.thim-list-post-wrapper-simple.list-post-base {
+  .list-posts {
+    overflow: hidden;
+    .post {
+      overflow: hidden;
+      clear: both;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .media {
+        float: left;
+        position: relative;
+        overflow: hidden;
+        img {
+          @include transition(all 0.5s);
+        }
+      }
+      .content {
+        width: calc(100% - 120px);
+        width: -webkit-calc(100% - 120px);
+        width: -moz-calc(100% - 120px);
+        margin-top: -5px;
+        float: left;
+        padding-left: 20px;
+        a {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: bold;
+        }
+        .article-date {
+          font-size: 12px;
+          line-height: 24px;
+          font-weight: bold;
+          color: #ccc;
+        }
+      }
+      &:hover {
+        .media {
+          img {
+            @include scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+

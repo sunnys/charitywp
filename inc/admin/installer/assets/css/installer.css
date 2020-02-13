@@ -1,0 +1,97 @@
+.thim-core-installer {
+    margin: 30px auto 0;
+    box-shadow: none;
+    background: #ddd;
+    padding: 0;
+    font-size: 14px;
+    max-width: 800px;
+}
+
+.thim-setup-content {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+    padding: 24px;
+    background: #f3f3f3;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+}
+
+.thim-setup-content .close {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.thim-setup-content .close:before {
+    content: "\f335";
+    font-family: Dashicons;
+}
+
+.thim-setup-content .header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.thim-setup-content .header .title {
+    color: #666;
+    margin: 0 0 30px;
+    font-size: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+mark {
+    background-color: transparent;
+}
+
+mark.yes {
+    color: #8BC34A;
+}
+
+mark.error {
+    color: #F44336;
+}
+
+mark.warning {
+    color: #FFC107;
+}
+
+.thim-setup-content table {
+    margin-bottom: 20px;
+}
+
+.thim-setup-content table th {
+    font-size: 16px;
+}
+
+.thim-core-active > h2 {
+    color: #8BC34A;
+}
+
+.thim-setup-content .notice {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.thim-setup-content .updating-message p:before {
+    margin-right: 10px;
+}
+
+.footer .brand {
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    line-height: 100px;
+}
+
+.thim-core-installer .thim-button-skip {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #999;
+}

@@ -1,0 +1,56 @@
+footer{
+    font-size: 13px;
+    .widget-title{
+		font-size: 14px;
+	    color: #FFF;
+	    font-weight: bold;
+	    line-height: 14px;
+	    margin-bottom: 25px;
+	}	
+	ul{
+		margin: 0;
+    	padding: 0;
+		li{
+			list-style: none;
+    		line-height: 34px;
+    		a{
+    			font-weight: 600;
+    		}
+		}
+	}
+	hr {
+		border-top: 1px solid #242424;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.widget{
+		a{
+			font-weight: 600;
+		} 
+		.thim-button.style3:hover {
+		    color: #FFF;
+		}
+	}
+	.fa{
+		font-weight: 600;
+	}
+	.text-copyright{
+		line-height: 54px;
+		font-weight: 600;
+	}
+
+
+	.thim-social ul li a{
+		 border-width: 2px;
+		 line-height: 28px;
+	}
+}
+
+#footer-bottom{
+	position: fixed;
+	z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
